@@ -14,7 +14,6 @@ import java.util.Properties;
  * @author ren
  * @date 2019/1/25
  */
-@Configuration
 public class PropertiesConfiguration {
 
     @Value("${mybatis.mapper-generate-config-location}")

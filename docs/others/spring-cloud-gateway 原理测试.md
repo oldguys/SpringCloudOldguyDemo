@@ -1,3 +1,55 @@
+#### spring-cloud-gateway 原理测试
+
+**必经FilteringWebHandler**
+org.springframework.cloud.gateway.handler.FilteringWebHandler
+
+gateway默认必经过滤器加载
+```
+	private static List<GatewayFilter> loadFilters(List<GlobalFilter> filters) {
+		return filters.stream().map(filter -> {
+			GatewayFilterAdapter gatewayFilter = new GatewayFilterAdapter(filter);
+			if (filter instanceof Ordered) {
+				int order = ((Ordered) filter).getOrder();
+				return new OrderedGatewayFilter(gatewayFilter, order);
+			}
+			return gatewayFilter;
+		}).collect(Collectors.toList());
+	}
+```
+
+默认情况下，经过gateway的微服务都可以按照以下格式走通
+
+```
+// serverId 为服务名，默认为spring.appliaction.name
+{serverId}/.......  
+例如:
+微服务 a 路径: /test 微服务注册名（spring.appliaction.name）为 test-a
+经过gateway则为 test-a/test
+```
+
+**StripPrefixGatewayFilter**
+
+如果希望 使用 /api/{server-id}/.... 作为服务前缀时，需要使用过滤器 StripPrefixGatewayFilter
+
+org.springframework.cloud.gateway.filter.factory.StripPrefixGatewayFilterFactory
+
+根据分割符号‘/’进行阶段 part 参数 为阶段去除个数
+
+可以直接在环境变量配置 
+
+```
+- id: oldguy-base
+  uri: lb://oldguy-base
+  predicates:
+    - Path=/api/base/**
+  filters:
+    - StripPrefix=2 // 配置拦截器
+```
+
+**自定义GlobalFilter**
+
+
+```
 package com.example.oldguy.filters;
 
 import com.alibaba.fastjson.JSON;
@@ -83,3 +135,10 @@ public class AuthFilter implements GlobalFilter, Ordered {
         return FilterConstants.AUTH_ORDER;
     }
 }
+
+```
+
+PS: StripPrefixGatewayFilter order = 1 
+
+
+

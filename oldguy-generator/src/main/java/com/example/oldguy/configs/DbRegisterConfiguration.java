@@ -5,7 +5,6 @@ import com.example.oldguy.commons.services.DbRegister;
 import com.example.oldguy.commons.services.impls.MySQLTableFactory;
 import com.example.oldguy.utils.Log4jUtils;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.util.StringUtils;
 
@@ -17,7 +16,6 @@ import java.util.List;
  * @Author: ren
  * @CreateTime: 2018-10-2018/10/15 0015 17:45
  */
-@Configuration
 public class DbRegisterConfiguration {
 
     @Value("${mybatis.application-location}")

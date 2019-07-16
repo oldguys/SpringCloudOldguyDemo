@@ -1,3 +1,74 @@
+#### GateWay 拦截
+
+> 用于SpringCloud项目的路由，请求转发。
+>
+
+###### spring-cloud-gateway 使用
+
+```
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-gateway</artifactId>
+    <version>2.1.1.RELEASE</version>
+</dependency>
+```
+
+配置gateway 环境变量
+
+SpringCloudOldguyDemo\oldguy-gate\src\main\resources\application-router.yml
+```
+spring:
+  cloud:
+    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:  "*"
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+#          routeIdPrefix: /api/
+      routes:
+        - id: auth-server
+          uri: lb://auth-server
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - StripPrefix=2
+        - id: oldguy-base
+          uri: lb://oldguy-base
+          predicates:
+            - Path=/api/base/**
+          filters:
+#            - PrefixPath=/api/base/
+            - StripPrefix=2
+
+```
+
+
+###### auth-api 客户端
+
+引入maven
+```
+<dependency>
+    <groupId>com.example.oldguy</groupId>
+    <artifactId>oldguy-auth-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+配置环境变量 appliaction.yml
+```
+oldguy:
+  no-auth-filter: /api/auth/
+  token-name: auth-token
+  jwt-info-header: jwt-info
+```
+
+配置权限拦截器
+```
 package com.example.oldguy.filters;
 
 import com.alibaba.fastjson.JSON;
@@ -83,3 +154,6 @@ public class AuthFilter implements GlobalFilter, Ordered {
         return FilterConstants.AUTH_ORDER;
     }
 }
+
+```
+

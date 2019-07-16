@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
  * @Description:
  * @CreateTIme: 2019/7/9 0009 下午 7:54
  **/
-@Configuration
+//@Configuration
 public class GateConfig {
 
 //    @Bean

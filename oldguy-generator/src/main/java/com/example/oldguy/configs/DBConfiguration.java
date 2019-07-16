@@ -3,7 +3,8 @@ package com.example.oldguy.configs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
@@ -12,7 +13,6 @@ import javax.sql.DataSource;
  * @author huangrenhao
  * @date 2019/1/9
  */
-@Configuration
 public class DBConfiguration {
 
     @Value("${mybatis.type-aliases-package}")
@@ -20,7 +20,6 @@ public class DBConfiguration {
 
     @Autowired
     private DataSource dataSource;
-    @Qualifier("dbRegisterConfiguration")
     @Autowired
     private DbRegisterConfiguration dbRegisterConfiguration;
 

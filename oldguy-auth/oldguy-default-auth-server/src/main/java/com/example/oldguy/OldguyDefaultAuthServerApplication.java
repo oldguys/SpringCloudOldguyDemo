@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+@EnableMyBatisGenerator
 @EnableAuthClient
 @MapperScan(basePackages = "com.example.oldguy.modules.auth.dao.jpas")
 @EnableTransactionManagement

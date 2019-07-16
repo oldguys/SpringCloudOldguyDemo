@@ -2,7 +2,9 @@ package com.example.oldguy.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Import;
 
 import javax.annotation.PostConstruct;
@@ -12,15 +14,28 @@ import java.io.IOException;
  * @author huangrenhao
  * @date 2019/1/10
  */
-@Configuration
-public class DemoConfiguration {
+public class MyBatisGeneratorConfiguration {
 
-    @Qualifier("propertiesConfiguration")
     @Autowired
     private PropertiesConfiguration propertiesConfiguration;
-    @Qualifier("DBConfiguration")
     @Autowired
     private DBConfiguration dbConfiguration;
+
+    @Bean
+    public PropertiesConfiguration propertiesConfiguration(){
+        return new PropertiesConfiguration();
+    }
+
+    @Bean
+    public DbRegisterConfiguration dbRegisterConfiguration(){
+        return new DbRegisterConfiguration();
+    }
+
+    @Bean
+    public DBConfiguration dbConfiguration(){
+        return new DBConfiguration();
+    }
+
 
     @PostConstruct
     public void init() throws IOException {
