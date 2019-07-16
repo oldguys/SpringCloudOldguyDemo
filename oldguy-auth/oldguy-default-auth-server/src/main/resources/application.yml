@@ -1,0 +1,26 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: auth-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#        namespace: oldguy
+  profiles:
+    active: test
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+logging:
+  level:
+#    root: debug
+    com.example.oldguy: debug
+
+jwt:
+  algorithm: HMACSHA256
+  key-name: oldguy-private-key
+  expire: 3600
+

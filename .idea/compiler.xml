@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cas-server" />
+        <module name="oldguy-auth-api" />
+        <module name="oldguy-auth-client" />
+        <module name="oldguy-base" />
+        <module name="oldguy-common" />
+        <module name="oldguy-common-api" />
+        <module name="oldguy-default-auth-server" />
+        <module name="oldguy-gate" />
+        <module name="oldguy-generator" />
+        <module name="oldguy-log-api" />
+        <module name="oldguy-log-client" />
+        <module name="oldguy-log-server" />
+        <module name="oldguy-security-server" />
+        <module name="oldguy-workflow" />
+        <module name="oldguy-workflow-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cas-server" target="1.8" />
+      <module name="oldguy-auth" target="1.8" />
+      <module name="oldguy-auth-api" target="1.8" />
+      <module name="oldguy-auth-client" target="1.8" />
+      <module name="oldguy-base" target="1.8" />
+      <module name="oldguy-cas" target="1.8" />
+      <module name="oldguy-common" target="1.8" />
+      <module name="oldguy-common-api" target="1.8" />
+      <module name="oldguy-default-auth-server" target="1.8" />
+      <module name="oldguy-gate" target="1.8" />
+      <module name="oldguy-generator" target="1.8" />
+      <module name="oldguy-log-api" target="1.8" />
+      <module name="oldguy-log-cilent" target="1.8" />
+      <module name="oldguy-log-client" target="1.8" />
+      <module name="oldguy-log-server" target="1.8" />
+      <module name="oldguy-module-api" target="1.8" />
+      <module name="oldguy-modules" target="1.8" />
+      <module name="oldguy-security-server" target="1.8" />
+      <module name="oldguy-sso" target="1.8" />
+      <module name="oldguy-workflow" target="1.8" />
+      <module name="oldguy-workflow-api" target="1.8" />
+      <module name="spring-cloud-oldguy-sso" target="1.8" />
+      <module name="SpringCloudOldguyDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudOldguyDemo" options="-parameters" />
+      <module name="cas-server" options="-parameters" />
+      <module name="oldguy-auth" options="-parameters" />
+      <module name="oldguy-auth-api" options="-parameters" />
+      <module name="oldguy-auth-client" options="-parameters" />
+      <module name="oldguy-base" options="-parameters" />
+      <module name="oldguy-cas" options="-parameters" />
+      <module name="oldguy-common" options="-parameters" />
+      <module name="oldguy-common-api" options="-parameters" />
+      <module name="oldguy-default-auth-server" options="-parameters" />
+      <module name="oldguy-gate" options="-parameters" />
+      <module name="oldguy-generator" options="-parameters" />
+      <module name="oldguy-log-api" options="-parameters" />
+      <module name="oldguy-log-cilent" options="-parameters" />
+      <module name="oldguy-log-client" options="-parameters" />
+      <module name="oldguy-log-server" options="-parameters" />
+      <module name="oldguy-module-api" options="" />
+      <module name="oldguy-modules" options="-parameters" />
+      <module name="oldguy-security-server" options="-parameters" />
+      <module name="oldguy-sso" options="-parameters" />
+      <module name="oldguy-workflow" options="-parameters" />
+      <module name="oldguy-workflow-api" options="-parameters" />
+      <module name="spring-cloud-oldguy-sso" options="-parameters" />
+    </option>
+  </component>
+</project>

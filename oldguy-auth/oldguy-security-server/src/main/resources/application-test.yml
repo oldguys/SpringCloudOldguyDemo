@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/oldguy-demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  type-aliases-package: com.example.oldguy.model.dao
+  template-location: configs/mapper/mybatis-template.xml
+  application-location: D:/workspace/demo/SpringCloudOldguyDemo/oldguy-auth/oldguy-security-server
+  mapper-generate-config-location: configs/mapper/mybatis-mapper-generate-config.perporties
+
+mybatis-plus:
+  config-location: classpath:configs/myBatis-config.xml
+  mapper-locations: classpath:mappers/**/*.xml
+  typeAliasesPackage: com.example.oldguy.model.dao.entities;

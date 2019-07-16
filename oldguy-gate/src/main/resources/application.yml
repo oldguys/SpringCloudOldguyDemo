@@ -1,0 +1,22 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: auth-agte
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#        namespace: oldguy
+  profiles:
+    active: router
+logging:
+  level:
+#    com.example.oldguy: debug
+#    root: debug
+    sun.net.www.protocol.http: info
+
+oldguy:
+  no-auth-filter: /api/auth/
+  token-name: auth-token
+  jwt-info-header: jwt-info

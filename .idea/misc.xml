@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-modules/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-gate/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-modules/oldguy-workflow/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-workflow-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/cas-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/oldguy-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/oldguy-auth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-modules/oldguy-base/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-common/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-auth-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/oldguy-default-auth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-modules/oldguy-log-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-common-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-auth/oldguy-log-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-log-api/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

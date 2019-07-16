@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:  "*"
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+#          routeIdPrefix: /api/
+      routes:
+        - id: auth-server
+          uri: lb://auth-server
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - StripPrefix=2
+        - id: oldguy-base
+          uri: lb://oldguy-base
+          predicates:
+            - Path=/api/base/**
+          filters:
+#            - PrefixPath=/api/base/
+            - StripPrefix=2
