@@ -1,5 +1,7 @@
 package com.example.oldguy.annonations;
 
+import com.example.oldguy.model.constants.AppLogType;
+
 import java.lang.annotation.*;
 
 /**
@@ -13,12 +15,9 @@ import java.lang.annotation.*;
 @Documented
 public @interface LogControl {
 
-    LogType type() default LogType.CRUD;
+    AppLogType type() default AppLogType.CRUD;
 
-    String message() default "";
+    String message();
 
-    enum LogType {
-        CRUD, PERM;
-    }
 
 }

@@ -6,6 +6,7 @@ import com.example.oldguy.utils.Log4jUtils;
 import com.example.oldguy.utils.PropertiesUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import javax.annotation.PostConstruct;
 import java.util.Properties;
@@ -17,6 +18,7 @@ import java.util.Properties;
  * @CreateTIme: 2019/7/9 0009 下午 8:06
  **/
 
+@ComponentScan("com.example.oldguy.services")
 public class AutoAuthClientConfiguration {
 
     private String configPath = "classpath:auth-client.properties";
@@ -42,11 +44,13 @@ public class AutoAuthClientConfiguration {
 
     @Bean
     public TokenInterceptor tokenInterceptor() {
+        Log4jUtils.getInstance(AutoAuthClientConfiguration.class).debug("开启 token 解析");
         return new TokenInterceptor();
     }
 
     @Bean
     public FeignInterceptor feignInterceptor() {
+        Log4jUtils.getInstance(AutoAuthClientConfiguration.class).debug("开启 feign token 转发");
         return new FeignInterceptor();
     }
 

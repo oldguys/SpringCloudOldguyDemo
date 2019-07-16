@@ -33,6 +33,10 @@ public class UserSessionUtils {
         return jwtInfoThreadLocal.get();
     }
 
+    public static String getJwtToken() {
+        return jwtInfoStrThreadLocal.get();
+    }
+
     public static void pushUserEntity(UserEntity entity) {
         userThreadLocal.set(entity);
     }

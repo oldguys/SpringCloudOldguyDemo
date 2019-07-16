@@ -16,8 +16,7 @@ public class FeignInterceptor implements RequestInterceptor {
 
     @Override
     public void apply(RequestTemplate template) {
-
         Log4jUtils.getInstance(getClass()).debug("feign 转发 token");
-        template.header(AutoAuthClientConfiguration.JWT_INFO_NAME, UserSessionUtils.getToken());
+        template.header(AutoAuthClientConfiguration.JWT_INFO_NAME, UserSessionUtils.getJwtToken());
     }
 }

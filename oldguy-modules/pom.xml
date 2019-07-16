@@ -35,17 +35,7 @@
             <!--<version>1.2.2.RELEASE</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-driver.version}</version>
-        </dependency>
 
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>io.springfox</groupId>

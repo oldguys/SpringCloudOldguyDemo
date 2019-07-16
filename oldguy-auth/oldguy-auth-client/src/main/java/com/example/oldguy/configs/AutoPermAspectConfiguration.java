@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @CreateTIme: 2019/7/15 0015 上午 8:59
  **/
 @Import(value = {AutoAuthClientConfiguration.class})
-@ComponentScan("com.example.oldguy.services")
+
 public class AutoPermAspectConfiguration {
 
     @Bean
