@@ -1,4 +1,4 @@
-package com.example.oldguy.controllers;
+package com.example.oldguy.modules.dictionary.controllers;
 
 import com.example.oldguy.annonations.HasPerms;
 import com.example.oldguy.annonations.LogControl;

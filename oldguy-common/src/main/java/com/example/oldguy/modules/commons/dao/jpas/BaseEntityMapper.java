@@ -16,7 +16,7 @@ import java.util.List;
  * @Description: TODO
  * @date 2017年12月4日 上午10:44:55
  */
-public interface BaseEntityMapper<T> extends BaseMapper<T, String> {
+public interface BaseEntityMapper<T> extends BaseMapper<T, String>, com.baomidou.mybatisplus.core.mapper.BaseMapper<T> {
 
     /**
      * 获取 List<T> 列表

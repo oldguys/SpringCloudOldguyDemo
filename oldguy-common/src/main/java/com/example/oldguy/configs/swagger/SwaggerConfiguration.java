@@ -1,6 +1,7 @@
 package com.example.oldguy.configs.swagger;
 
 import com.example.oldguy.utils.Log4jUtils;
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,12 +15,14 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+
 /**
  * @ClassName: SwaggerConfiguration
  * @Author: ren
  * @Description:
  * @CreateTIme: 2019/6/17 0017 下午 12:30
  **/
+@EnableSwaggerBootstrapUI
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration implements WebMvcConfigurer {

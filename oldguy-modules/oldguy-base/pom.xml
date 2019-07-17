@@ -30,6 +30,12 @@
 
         <dependency>
             <groupId>com.example.oldguy</groupId>
+            <artifactId>oldguy-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example.oldguy</groupId>
             <artifactId>oldguy-auth-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -37,6 +43,18 @@
         <dependency>
             <groupId>com.example.oldguy</groupId>
             <artifactId>oldguy-log-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example.oldguy</groupId>
+            <artifactId>oldguy-base-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example.oldguy</groupId>
+            <artifactId>oldguy-generator</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

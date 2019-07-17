@@ -6,6 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @ClassName: AppDictionary
+ * @Author: ren
+ * @Description:
+ * @CreateTIme: 2019/7/17 0017 上午 9:07
+ **/
 @EnableMyBatisGenerator
 @EnableAuthClient
 @MapperScan(basePackages = "com.example.oldguy.modules.auth.dao.jpas")

@@ -46,7 +46,7 @@ public class AbstractPageQueryForm<T> extends AbstractQueryForm {
         current = current == null ? current = 0 : current;
         size = size == null ? size = PageConstants.DEFAULT_PAGE_SIZE : size;
 
-        return new Page<T>(current, size);
+        return new Page<>(current, size);
     }
 
 }

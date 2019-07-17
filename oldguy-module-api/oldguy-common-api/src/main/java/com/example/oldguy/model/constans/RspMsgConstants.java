@@ -1,5 +1,7 @@
 package com.example.oldguy.model.constans;
 
+import java.io.Serializable;
+
 /**
  * @ClassName: RspMsgConstants
  * @Author: ren
@@ -12,4 +14,7 @@ public interface RspMsgConstants {
 
     String DEFAULT_ERROR_MESSAGE = "操作失败!";
 
+    static String getNotFoundMessage(Serializable id){
+        return "没有找到 [ id = "+id+" ] 相关数据 !";
+    }
 }

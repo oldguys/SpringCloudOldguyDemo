@@ -22,6 +22,9 @@
         <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-common-api/pom.xml" />
         <option value="$PROJECT_DIR$/oldguy-auth/oldguy-log-client/pom.xml" />
         <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-log-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-base-api/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-modules/oldguy-multi-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-client/pom.xml" />
       </list>
     </option>
   </component>

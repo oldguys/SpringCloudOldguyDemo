@@ -1,6 +1,7 @@
 package com.example.oldguy.model.dao.entities;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.example.oldguy.model.annotation.Comment;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -16,14 +17,12 @@ import java.util.Date;
  * @CreateTIme: 2019/6/27 0027 下午 7:40
  **/
 @Data
-//@MappedSuperclass
 public class BaseEntity {
 
-//    @Id
     @TableId
-//    @GeneratedValue
     private String id;
 
+    @Comment("创建人ID")
     private Date createTime;
 
     /**
@@ -32,5 +31,6 @@ public class BaseEntity {
      *  0 ：未删除
      */
     @Column(nullable = false)
+    @Comment("删除状态[1:已删除；0:未删除]")
     private Integer isDeleted;
 }

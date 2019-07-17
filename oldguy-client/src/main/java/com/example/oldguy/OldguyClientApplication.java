@@ -3,11 +3,11 @@ package com.example.oldguy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//@SpringBootApplication
-public class OldguyCommonApplication {
+@SpringBootApplication
+public class OldguyClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OldguyCommonApplication.class, args);
+        SpringApplication.run(OldguyClientApplication.class, args);
     }
 
 }

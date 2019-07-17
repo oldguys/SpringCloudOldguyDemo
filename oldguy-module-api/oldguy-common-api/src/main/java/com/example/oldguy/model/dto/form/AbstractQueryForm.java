@@ -26,16 +26,11 @@ public abstract class AbstractQueryForm {
     private Integer sort;
 
     /**
-     * 排序列明
-     */
-    private String sortColumn;
-
-    /**
      * 状态：
      * 1 - > 正常
      * 0 - > 禁用
      */
     @ApiModelProperty("状态： 1 - > 正常;0 - > 禁用")
-    private Integer delFlag;
+    private Integer isDeleted;
 
 }

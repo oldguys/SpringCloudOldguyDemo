@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/oldguy-module-api/oldguy-auth-api/oldguy-auth-api.iml" filepath="$PROJECT_DIR$/oldguy-module-api/oldguy-auth-api/oldguy-auth-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-auth/oldguy-auth-client/oldguy-auth-client.iml" filepath="$PROJECT_DIR$/oldguy-auth/oldguy-auth-client/oldguy-auth-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-modules/oldguy-base/oldguy-base.iml" filepath="$PROJECT_DIR$/oldguy-modules/oldguy-base/oldguy-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oldguy-module-api/oldguy-base-api/oldguy-base-api.iml" filepath="$PROJECT_DIR$/oldguy-module-api/oldguy-base-api/oldguy-base-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oldguy-client/oldguy-client.iml" filepath="$PROJECT_DIR$/oldguy-client/oldguy-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-common/oldguy-common.iml" filepath="$PROJECT_DIR$/oldguy-common/oldguy-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-module-api/oldguy-common-api/oldguy-common-api.iml" filepath="$PROJECT_DIR$/oldguy-module-api/oldguy-common-api/oldguy-common-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-auth/oldguy-default-auth-server/oldguy-default-auth-server.iml" filepath="$PROJECT_DIR$/oldguy-auth/oldguy-default-auth-server/oldguy-default-auth-server.iml" />
@@ -18,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/oldguy-modules/oldguy-log-server/oldguy-log-server.iml" filepath="$PROJECT_DIR$/oldguy-modules/oldguy-log-server/oldguy-log-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-module-api/oldguy-module-api.iml" filepath="$PROJECT_DIR$/oldguy-module-api/oldguy-module-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-modules/oldguy-modules.iml" filepath="$PROJECT_DIR$/oldguy-modules/oldguy-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oldguy-modules/oldguy-multi-datasource/oldguy-multi-datasource.iml" filepath="$PROJECT_DIR$/oldguy-modules/oldguy-multi-datasource/oldguy-multi-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-auth/oldguy-security-server/oldguy-security-server.iml" filepath="$PROJECT_DIR$/oldguy-auth/oldguy-security-server/oldguy-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-modules/oldguy-workflow/oldguy-workflow.iml" filepath="$PROJECT_DIR$/oldguy-modules/oldguy-workflow/oldguy-workflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/oldguy-module-api/oldguy-workflow-api/oldguy-workflow-api.iml" filepath="$PROJECT_DIR$/oldguy-module-api/oldguy-workflow-api/oldguy-workflow-api.iml" />

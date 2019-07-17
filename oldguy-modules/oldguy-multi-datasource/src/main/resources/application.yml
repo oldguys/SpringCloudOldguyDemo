@@ -1,0 +1,27 @@
+server:
+  port: 9015
+spring:
+  application:
+    name: oldguy-multi-datasource
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles:
+    active: multi
+logging:
+  level:
+    com.example.oldguy: debug
+#    root: debug
+
+mybatis:
+  type-aliases-package: com.example.oldguy.modules.test1.dao.entities;com.example.oldguy.modules.test2.dao.entities;
+  template-location: configs/mapper/mybatis-template.xml
+  application-location: D:\workspace\demo\SpringCloudOldguyDemo\oldguy-modules\oldguy-multi-datasource
+  mapper-generate-config-location: configs/mapper/mybatis-mapper-generate-config.perporties
+
