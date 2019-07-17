@@ -1,5 +1,7 @@
 #### mybatis代码生成器
 
+**模块位置：oldguy-generator**
+
 1. 引入Maven
 ```
 <dependency>
