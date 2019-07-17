@@ -27,6 +27,12 @@
 
     <modules>
         <module>oldguy-common</module>
+        <module>oldguy-generator</module>
+        <module>oldguy-auth</module>
+        <module>oldguy-clients</module>
+        <module>oldguy-modules</module>
+        <module>oldguy-module-api</module>
+        <module>oldguy-gate</module>
     </modules>
 
     <dependencyManagement>
@@ -107,8 +113,6 @@
         </dependency>
 
     </dependencies>
-
-
 
     <build>
         <plugins>

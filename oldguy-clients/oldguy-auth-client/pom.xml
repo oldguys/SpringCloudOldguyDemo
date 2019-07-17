@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example.oldguy</groupId>
-        <artifactId>oldguy-auth</artifactId>
+        <artifactId>oldguy-clients</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -24,12 +24,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>5.1.8.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

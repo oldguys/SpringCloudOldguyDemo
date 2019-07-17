@@ -2,31 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.example.oldguy</groupId>
-        <artifactId>oldguy-auth</artifactId>
+        <artifactId>spring-cloud-oldguy</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <packaging>pom</packaging>
+
     <groupId>com.example.oldguy</groupId>
-    <artifactId>oldguy-log-client</artifactId>
+    <artifactId>oldguy-clients</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>oldguy-log-client</name>
+    <name>oldguy-clients</name>
     <description>Demo project for Spring Boot</description>
-
-
-
-    <dependencies>
-
-        <dependency>
-            <groupId>com.example.oldguy</groupId>
-            <artifactId>oldguy-log-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-    </dependencies>
-
 
 
 </project>

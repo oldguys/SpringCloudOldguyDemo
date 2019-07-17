@@ -4,21 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example.oldguy</groupId>
-        <artifactId>spring-cloud-oldguy</artifactId>
+        <artifactId>oldguy-clients</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <packaging>pom</packaging>
-
     <groupId>com.example.oldguy</groupId>
-    <artifactId>oldguy-auth</artifactId>
+    <artifactId>oldguy-nacos-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>oldguy-auth</name>
+    <name>oldguy-nacos-client</name>
     <description>Demo project for Spring Boot</description>
-
-    <modules>
-        <module>oldguy-default-auth-server</module>
-        <module>oldguy-security-server</module>
-    </modules>
 
 </project>
