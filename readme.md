@@ -31,4 +31,16 @@
 
 ###### 功能介绍：
     
-    1. 
+1.  [auth-server 认证模块](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/auth/Auth%20%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.md)
+2. [spring-cloud-gateway路由](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/auth/GateWay%20%E6%8B%A6%E6%88%AA.md)
+3. [log-server 日志服务](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/auth/log-server%20%E6%97%A5%E5%BF%97%E6%9C%8D%E5%8A%A1.md)
+4. [Mybatis代码生成工具](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/common/%E8%87%AA%E5%AE%9A%E4%B9%89%20mybatis%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.md)
+
+
+###### 核心功能设计：
+1. [auth-client 认证与授权 核心逻辑](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/auth/%E5%8A%9F%E8%83%BD%E4%BB%A3%E7%A0%81%E4%BB%8B%E7%BB%8D.md)
+2. [基于 mybatis-plus-boot-starter 改造的多数据源](https://github.com/oldguys/SpringCloudOldguyDemo/blob/master/docs/modules/Mybatis-plus%20%E9%85%8D%E7%BD%AE%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90.md)
+3. [mybatis代码生成器核心逻辑](https://www.jianshu.com/p/7115f58dc1fb)
+4. 
+
+
