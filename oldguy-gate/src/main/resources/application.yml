@@ -3,18 +3,9 @@ server:
 spring:
   application:
     name: oldguy-gate
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-#        namespace: oldguy
   profiles:
-    active: router
-logging:
-  level:
-#    com.example.oldguy: debug
-#    root: debug
-    sun.net.www.protocol.http: info
+    active: ${PROFILES}
+
 
 oldguy:
   no-auth-filter: /api/auth/

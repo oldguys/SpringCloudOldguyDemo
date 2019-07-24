@@ -4,16 +4,10 @@ server:
 spring:
   application:
     name: oldguy-log-server
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
-logging:
-  level:
-    com.example.oldguy: debug
-#    root: debug
+  profiles:
+    active: ${PROFILES}

@@ -2,6 +2,7 @@ package com.example.oldguy.configs.datasource;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties;
+import com.example.oldguy.config.AbstractMybatisPlusConfiguration;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;

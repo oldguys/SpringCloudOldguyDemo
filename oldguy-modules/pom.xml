@@ -15,7 +15,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>oldguy-modules</name>
 
-    <properties></properties>
+    <modules>
+        <module>oldguy-log-server</module>
+        <module>oldguy-base</module>
+        <module>oldguy-multi-datasource</module>
+        <module>oldguy-workflow</module>
+    </modules>
 
     <dependencies>
         <dependency>

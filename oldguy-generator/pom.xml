@@ -15,6 +15,7 @@
     <name>oldguy-generator</name>
     <description>Demo project for Spring Boot</description>
 
+    <!--<packaging>pom</packaging>-->
 
     <dependencies>
 
@@ -60,12 +61,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-driver.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.example.oldguy</groupId>
-            <artifactId>oldguy-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
 
         <dependency>
             <groupId>ognl</groupId>
@@ -73,15 +68,21 @@
             <version>3.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.example.oldguy</groupId>
+            <artifactId>oldguy-common-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 
 </project>

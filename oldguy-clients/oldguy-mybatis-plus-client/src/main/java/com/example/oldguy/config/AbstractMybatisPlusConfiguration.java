@@ -1,4 +1,4 @@
-package com.example.oldguy.configs.datasource;
+package com.example.oldguy.config;
 
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties;
 import com.baomidou.mybatisplus.autoconfigure.SpringBootVFS;

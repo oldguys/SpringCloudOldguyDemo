@@ -1,0 +1,16 @@
+version: '3'
+services:
+  oldguy-gate:
+    image: oldguy-gate:latest
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /home/dc-ui/volume/data:/data
+    ports:
+      - "9000:9000"
+    environment:
+      - PROFILES=router,sit
+      - NACOS_ADDR=192.168.62.129:8848
+      - LOG_LEVEL=info
+
+

@@ -4,25 +4,13 @@ server:
 spring:
   application:
     name: oldguy-base
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/oldguy-demo?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
-logging:
-  level:
-    com.example.oldguy: debug
-#    root: debug
-
+  profiles:
+    active: ${PROFILES}
 
 mybatis:
   type-aliases-package: com.example.oldguy.model.dao.entities.dictionary

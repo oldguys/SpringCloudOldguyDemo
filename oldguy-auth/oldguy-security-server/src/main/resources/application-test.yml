@@ -15,4 +15,4 @@ mybatis:
 mybatis-plus:
   config-location: classpath:configs/myBatis-config.xml
   mapper-locations: classpath:mappers/**/*.xml
-  typeAliasesPackage: com.example.oldguy.model.dao.entities;
+  typeAliasesPackage: com.example.oldguy.model.workflow.entities;

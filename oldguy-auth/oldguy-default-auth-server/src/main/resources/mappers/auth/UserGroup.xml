@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.oldguy.model.dao.jpas.UserGroupMapper">
+
+    <sql id="table_name">sys_user_group</sql>
+
+    <sql id="all_entity_columns">
+ 	 ${prefix}.group_name,
+	 ${prefix}.description,
+	 ${prefix}.group_flag,
+	 ${prefix}.service_id,
+	 ${prefix}.creator_id,
+	 ${prefix}.creator_name,
+	 ${prefix}.updater_id,
+	 ${prefix}.updater_name,
+	 ${prefix}.update_time,
+	 ${prefix}.id,
+	 ${prefix}.create_time,
+	 ${prefix}.is_deleted
+	 </sql>
+
+    <select id="findByPage" resultType="UserGroup">
+        SELECT
+        <include refid="all_entity_columns">
+            <property name="prefix" value="a"/>
+        </include>
+        FROM
+        <include refid="table_name"/> a
+        <where>
+            <if test="form.isDeleted != null">
+                AND a.is_deleted = #{form.isDeleted}
+            </if>
+            <if test="form.startTime != null ">
+                AND a.create_time &gt; #{form.startTime}
+            </if>
+            <if test="form.endTime != null ">
+                AND a.create_time &lt; #{form.endTime}
+            </if>
+        </where>
+        <choose>
+            <when test="form.sort != null and form.sort == 1">
+                ORDER BY a.create_time DESC
+            </when>
+            <when test="form.sort != null and form.sort == 0">
+                ORDER BY a.create_time ASC
+            </when>
+            <otherwise>
+                ORDER BY a.create_time DESC
+            </otherwise>
+        </choose>
+    </select>
+
+
+    <select id="findOne" parameterType="string" resultType="UserGroup">
+        SELECT
+        <include refid="all_entity_columns">
+            <property name="prefix" value="a"/>
+        </include>
+        FROM
+        <include refid="table_name"/>
+        a
+        WHERE
+        id = #{id}
+    </select>
+
+    <select id="findAll" parameterType="int" resultType="UserGroup">
+        SELECT
+        <include refid="all_entity_columns">
+            <property name="prefix" value="a"/>
+        </include>
+        FROM
+        <include refid="table_name"/> a
+        <where>
+            <choose>
+                <when test="isDeleted != null">
+                    a.is_deleted = #{isDeleted}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <update id="update" parameterType="UserGroup">
+        UPDATE
+        <include refid="table_name"/>
+        SET
+        
+ 	 group_name = #{groupName},
+	 description = #{description},
+	 group_flag = #{groupFlag},
+	 service_id = #{serviceId},
+	 creator_id = #{creatorId},
+	 creator_name = #{creatorName},
+	 updater_id = #{updaterId},
+	 updater_name = #{updaterName},
+	 update_time = #{updateTime},
+	 is_deleted = #{isDeleted}
+	 
+        WHERE
+        id = #{id}
+    </update>
+
+    <update id="updateBatch" >
+        <foreach collection="collection" item="item" separator=";">
+            UPDATE
+            <include refid="table_name"/>
+            SET
+            
+ 	 group_name = #{item.groupName},
+	 description = #{item.description},
+	 group_flag = #{item.groupFlag},
+	 service_id = #{item.serviceId},
+	 creator_id = #{item.creatorId},
+	 creator_name = #{item.creatorName},
+	 updater_id = #{item.updaterId},
+	 updater_name = #{item.updaterName},
+	 update_time = #{item.updateTime},
+	 is_deleted = #{item.isDeleted}
+	 
+            WHERE
+            id = #{item.id}
+        </foreach>
+    </update>
+
+    <update id="updateDeleted">
+        UPDATE
+        <include refid="table_name"/>
+        SET
+        is_deleted = #{isDeleted}
+        WHERE
+        id = #{id}
+    </update>
+
+    <insert id="save" keyProperty="id" useGeneratedKeys="true" parameterType="UserGroup">
+        INSERT
+        <include refid="table_name"/>
+        (
+ 	 group_name,
+	 description,
+	 group_flag,
+	 service_id,
+	 creator_id,
+	 creator_name,
+	 updater_id,
+	 updater_name,
+	 update_time,
+	 id,
+	 create_time,
+	 is_deleted
+	 )
+        VALUES
+        (
+ 	 #{groupName},
+	 #{description},
+	 #{groupFlag},
+	 #{serviceId},
+	 #{creatorId},
+	 #{creatorName},
+	 #{updaterId},
+	 #{updaterName},
+	 #{updateTime},
+	 #{id},
+	 #{createTime},
+	 #{isDeleted}
+	 )
+    </insert>
+
+    <insert id="saveBatch" keyProperty="id" useGeneratedKeys="true" parameterType="UserGroup">
+        INSERT
+        <include refid="table_name"/>
+        (
+ 	 group_name,
+	 description,
+	 group_flag,
+	 service_id,
+	 creator_id,
+	 creator_name,
+	 updater_id,
+	 updater_name,
+	 update_time,
+	 id,
+	 create_time,
+	 is_deleted
+	 )
+        VALUES
+        <foreach collection="collections" item="item" separator=",">
+        (
+ 		 #{item.groupName},
+		 #{item.description},
+		 #{item.groupFlag},
+		 #{item.serviceId},
+		 #{item.creatorId},
+		 #{item.creatorName},
+		 #{item.updaterId},
+		 #{item.updaterName},
+		 #{item.updateTime},
+		 #{item.id},
+		 #{item.createTime},
+		 #{item.isDeleted}
+	 )
+        </foreach>
+    </insert>
+</mapper>

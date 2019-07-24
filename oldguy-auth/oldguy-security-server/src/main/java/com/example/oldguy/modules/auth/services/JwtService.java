@@ -1,7 +1,7 @@
 package com.example.oldguy.modules.auth.services;
 
 import com.alibaba.fastjson.JSON;
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import com.example.oldguy.model.dto.JwtInfo;
 import com.example.oldguy.utils.Log4jUtils;
 import org.apache.commons.lang.StringUtils;

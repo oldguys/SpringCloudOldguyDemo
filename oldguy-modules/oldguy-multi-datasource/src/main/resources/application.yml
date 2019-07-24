@@ -14,10 +14,8 @@ spring:
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
   profiles:
-    active: multi
-logging:
-  level:
-    com.example.oldguy: debug
+    active: ${PROFILES}
+
 #    root: debug
 
 mybatis:
@@ -26,3 +24,18 @@ mybatis:
   application-location: D:\workspace\demo\SpringCloudOldguyDemo\oldguy-modules\oldguy-multi-datasource
   mapper-generate-config-location: configs/mapper/mybatis-mapper-generate-config.perporties
 
+mybatis-plus:
+  test1:
+    config-location: classpath:configs/myBatis-config.xml
+    mapper-locations: classpath:mappers/test1/**/*.xml
+    type-aliases-package: com.example.oldguy.modules.test1.dao.entities
+    global-config:
+      db-config:
+        id-type: UUID
+  test2:
+    config-location: classpath:configs/myBatis-config.xml
+    mapper-locations: classpath:mappers/test2/**/*.xml
+    type-aliases-package: com.example.oldguy.modules.test2.dao.entities
+    global-config:
+      db-config:
+        id-type: UUID

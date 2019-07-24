@@ -11,7 +11,6 @@
         <module name="oldguy-auth-client" />
         <module name="oldguy-base" />
         <module name="oldguy-base-api" />
-        <module name="oldguy-client" />
         <module name="oldguy-common" />
         <module name="oldguy-common-api" />
         <module name="oldguy-default-auth-server" />
@@ -21,6 +20,8 @@
         <module name="oldguy-log-client" />
         <module name="oldguy-log-server" />
         <module name="oldguy-multi-datasource" />
+        <module name="oldguy-mybatis-plus-client" />
+        <module name="oldguy-nacos-client" />
         <module name="oldguy-security-server" />
         <module name="oldguy-workflow" />
         <module name="oldguy-workflow-api" />
@@ -35,6 +36,7 @@
       <module name="oldguy-base-api" target="1.8" />
       <module name="oldguy-cas" target="1.8" />
       <module name="oldguy-client" target="1.8" />
+      <module name="oldguy-clients" target="1.8" />
       <module name="oldguy-common" target="1.8" />
       <module name="oldguy-common-api" target="1.8" />
       <module name="oldguy-default-auth-server" target="1.8" />
@@ -47,6 +49,8 @@
       <module name="oldguy-module-api" target="1.8" />
       <module name="oldguy-modules" target="1.8" />
       <module name="oldguy-multi-datasource" target="1.8" />
+      <module name="oldguy-mybatis-plus-client" target="1.8" />
+      <module name="oldguy-nacos-client" target="1.8" />
       <module name="oldguy-security-server" target="1.8" />
       <module name="oldguy-sso" target="1.8" />
       <module name="oldguy-workflow" target="1.8" />
@@ -57,15 +61,16 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SpringCloudOldguyDemo" options="-parameters" />
+      <module name="SpringCloudOldguyDemo" options="" />
       <module name="cas-server" options="-parameters" />
-      <module name="oldguy-auth" options="-parameters" />
+      <module name="oldguy-auth" options="" />
       <module name="oldguy-auth-api" options="-parameters" />
       <module name="oldguy-auth-client" options="-parameters" />
       <module name="oldguy-base" options="-parameters" />
       <module name="oldguy-base-api" options="-parameters" />
       <module name="oldguy-cas" options="-parameters" />
-      <module name="oldguy-client" options="-parameters" />
+      <module name="oldguy-client" options="" />
+      <module name="oldguy-clients" options="-parameters" />
       <module name="oldguy-common" options="-parameters" />
       <module name="oldguy-common-api" options="-parameters" />
       <module name="oldguy-default-auth-server" options="-parameters" />
@@ -76,8 +81,10 @@
       <module name="oldguy-log-client" options="-parameters" />
       <module name="oldguy-log-server" options="-parameters" />
       <module name="oldguy-module-api" options="" />
-      <module name="oldguy-modules" options="-parameters" />
+      <module name="oldguy-modules" options="" />
       <module name="oldguy-multi-datasource" options="-parameters" />
+      <module name="oldguy-mybatis-plus-client" options="-parameters" />
+      <module name="oldguy-nacos-client" options="-parameters" />
       <module name="oldguy-security-server" options="-parameters" />
       <module name="oldguy-sso" options="-parameters" />
       <module name="oldguy-workflow" options="-parameters" />

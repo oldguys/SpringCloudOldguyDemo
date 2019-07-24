@@ -1,0 +1,22 @@
+test1:
+  datasource:
+    url: jdbc:mysql://${MYSQL_URL_ONE}/oldguy-demo-multi1?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+test2:
+  datasource:
+    url: jdbc:mysql://${MYSQL_URL_SEC}/oldguy-demo-multi2?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+logging:
+  level:
+    com.example.oldguy: ${LOG_LEVEL}
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR}

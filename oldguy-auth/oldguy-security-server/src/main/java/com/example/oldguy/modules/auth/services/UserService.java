@@ -1,6 +1,6 @@
 package com.example.oldguy.modules.auth.services;
 
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import com.example.oldguy.modules.auth.dao.jpas.UserEntityMapper;
 import com.example.oldguy.modules.auth.dto.UserRsp;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -6,6 +6,7 @@ import com.example.oldguy.model.dto.PermsForm;
 import com.example.oldguy.model.dto.RspMsg;
 import com.example.oldguy.modules.commons.utils.FormValidateUtils;
 import com.example.oldguy.services.PermClientApi;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  * @CreateTIme: 2019/7/15 0015 上午 9:13
  **/
+@Api(tags = "授权")
 @RestController
 @RequestMapping("perms")
 public class PermsController implements PermClientApi {

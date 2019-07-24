@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR}
+logging:
+  level:
+    com.example.oldguy: ${LOG_LEVEL}
+#    root: debug

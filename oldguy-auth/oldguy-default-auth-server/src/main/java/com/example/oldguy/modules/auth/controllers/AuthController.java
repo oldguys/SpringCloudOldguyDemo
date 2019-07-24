@@ -7,6 +7,7 @@ import com.example.oldguy.modules.auth.services.JwtService;
 import com.example.oldguy.modules.auth.services.UserService;
 import com.example.oldguy.exceptions.FormValidException;
 import com.example.oldguy.services.AuthClientApi;
+import io.swagger.annotations.Api;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  * @CreateTIme: 2019/6/28 0028 上午 9:11
  **/
+@Api(tags = "认证")
 @RestController
 @RequestMapping("auth")
 public class AuthController implements AuthClientApi {

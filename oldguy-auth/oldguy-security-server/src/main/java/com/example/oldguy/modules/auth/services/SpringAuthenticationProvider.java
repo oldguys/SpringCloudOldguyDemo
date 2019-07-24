@@ -1,14 +1,13 @@
 package com.example.oldguy.modules.auth.services;
 
 
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import com.example.oldguy.modules.auth.dao.jpas.UserEntityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.stereotype.Service;
 
 /**
  * 自定义登录授权认证器

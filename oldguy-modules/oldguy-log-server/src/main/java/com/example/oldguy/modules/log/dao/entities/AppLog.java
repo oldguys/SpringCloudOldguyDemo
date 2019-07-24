@@ -4,7 +4,6 @@ package com.example.oldguy.modules.log.dao.entities;
 import com.example.oldguy.model.dao.entities.BaseEntity;
 import com.example.oldguy.services.CreatorSetterImpl;
 import lombok.Data;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://${MYSQL_URL}/oldguy-workflow-demo?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR}
+        service: oldguy-workflow
+logging:
+  level:
+    com.example.oldguy: ${LOG_LEVEL}
+#  defaultEnumTypeHandler: com.baomidou.mybatisplus.extension.handlers.EnumTypeHandler

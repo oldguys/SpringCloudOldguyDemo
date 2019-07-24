@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR}
+#        namespace: oldguy
+logging:
+  level:
+    com.example.oldguy: ${LOG_LEVEL}
+    #    root: debug
+    sun.net.www.protocol.http: info

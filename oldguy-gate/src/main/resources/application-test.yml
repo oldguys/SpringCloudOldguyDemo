@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#        namespace: oldguy
+logging:
+  level:
+    #    com.example.oldguy: debug
+    #    root: debug
+    sun.net.www.protocol.http: info

@@ -48,4 +48,24 @@ public class CommonBaseEntity extends BaseEntity implements CreatorSetterImpl, U
     @Comment("最后更新时间")
     private Date updateTime;
 
+    @Override
+    public void setCreatorId(String creatorId) {
+        this.creatorId = creatorId;
+    }
+    @Override
+    public void setCreatorName(String creatorName) {
+        this.creatorName = creatorName;
+    }
+    @Override
+    public void setUpdaterId(String updaterId) {
+        this.updaterId = updaterId;
+    }
+    @Override
+    public void setUpdaterName(String updaterName) {
+        this.updaterName = updaterName;
+    }
+    @Override
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }

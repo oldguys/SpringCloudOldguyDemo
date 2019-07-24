@@ -1,10 +1,8 @@
 package com.example.oldguy.modules.commons.services;
 
-import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Base64Utils;
 import org.springframework.util.StringUtils;
 
 import javax.crypto.KeyGenerator;
@@ -13,7 +11,6 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.Random;
 
 
 /**

@@ -1,7 +1,7 @@
 package com.example.oldguy.modules.auth.dao.jpas;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import com.example.oldguy.modules.commons.dao.jpas.BaseEntityMapper;
 import org.springframework.stereotype.Repository;
 

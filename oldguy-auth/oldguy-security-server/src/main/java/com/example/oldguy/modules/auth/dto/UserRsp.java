@@ -1,6 +1,6 @@
 package com.example.oldguy.modules.auth.dto;
 
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import lombok.Data;
 
 /**

@@ -1,6 +1,5 @@
 package com.example.oldguy.modules.auth.dao.jpas;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.oldguy.model.dao.entities.UserEntity;
 import com.example.oldguy.modules.commons.dao.jpas.BaseEntityMapper;
 import org.springframework.stereotype.Repository;
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Repository;
  * @CreateTIme: 2019/6/28 0028 上午 10:47
  **/
 @Repository
-public interface UserEntityMapper extends BaseEntityMapper<UserEntity>, BaseMapper<UserEntity> {
+public interface UserEntityMapper extends BaseEntityMapper<UserEntity> {
 
     /**
      *

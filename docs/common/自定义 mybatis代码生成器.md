@@ -30,7 +30,7 @@ mybatis:
 3. 使用 @Entity 加入被自动建表实体
 
 ```
-package com.example.oldguy.model.dao.entities;
+package com.example.oldguy.model.workflow.entities;
 
 import com.example.oldguy.model.annotation.Entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;

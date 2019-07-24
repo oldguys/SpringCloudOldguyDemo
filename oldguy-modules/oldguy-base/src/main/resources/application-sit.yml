@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR}
+  datasource:
+    url: jdbc:mysql://${MYSQL_URL}/oldguy-demo?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    com.example.oldguy: ${LOG_LEVEL}
+#    root: debug
+

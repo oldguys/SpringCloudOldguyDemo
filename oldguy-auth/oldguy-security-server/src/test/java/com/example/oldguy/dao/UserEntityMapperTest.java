@@ -1,6 +1,6 @@
 package com.example.oldguy.dao;
 
-import com.example.oldguy.model.dao.entities.UserEntity;
+import com.example.oldguy.model.workflow.dao.entities.UserEntity;
 import com.example.oldguy.modules.auth.dao.jpas.UserEntityMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;

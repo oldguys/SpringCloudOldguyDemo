@@ -8,10 +8,22 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <!--<packaging>pom</packaging>-->
+
     <groupId>com.example.oldguy</groupId>
     <artifactId>oldguy-nacos-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>oldguy-nacos-client</name>
     <description>Demo project for Spring Boot</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

@@ -25,6 +25,13 @@
         <option value="$PROJECT_DIR$/oldguy-module-api/oldguy-base-api/pom.xml" />
         <option value="$PROJECT_DIR$/oldguy-modules/oldguy-multi-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/oldguy-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-client/oldguy-auth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-client/oldguy-log-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-clients/oldguy-auth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-clients/oldguy-log-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-clients/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-clients/oldguy-nacos-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oldguy-clients/oldguy-mybatis-plus-client/pom.xml" />
       </list>
     </option>
   </component>

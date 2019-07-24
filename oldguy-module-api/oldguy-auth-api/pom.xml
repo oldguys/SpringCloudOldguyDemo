@@ -8,10 +8,11 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <!--<packaging>pom</packaging>-->
+
     <groupId>com.example.oldguy</groupId>
     <artifactId>oldguy-auth-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
     <name>oldguy-auth-api</name>
 
     <description>Demo project for Spring Boot</description>
@@ -25,4 +26,16 @@
         </dependency>
 
     </dependencies>
+
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<classifier>exec</classifier>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 </project>
