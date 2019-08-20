@@ -1,5 +1,6 @@
 package com.example.oldguy.utils;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.util.ResourceUtils;
 
 import java.io.*;
@@ -16,12 +17,16 @@ public class PropertiesUtils {
     public static Properties getProperties(String path) {
         Properties properties = new Properties();
         try {
-            File file = ResourceUtils.getFile(path);
+//            File file = ResourceUtils.getFile(path);
+//
+//            FileInputStream fileInputStream = new FileInputStream(file);
 
-            FileInputStream fileInputStream = new FileInputStream(file);
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
+            ClassPathResource resource = new ClassPathResource(path);
+            InputStream inputStream = resource.getInputStream();
+
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
             properties.load(new InputStreamReader(bufferedInputStream, "UTF-8"));
-            fileInputStream.close();
+            inputStream.close();
 
         } catch (Exception e) {
             e.printStackTrace();

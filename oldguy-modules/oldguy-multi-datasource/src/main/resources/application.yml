@@ -1,6 +1,6 @@
 server:
-#  port: 9015
-  port: 0
+  port: 9015
+#  port: 0
 spring:
   application:
     name: oldguy-multi-datasource

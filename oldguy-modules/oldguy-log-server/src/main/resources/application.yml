@@ -1,6 +1,6 @@
 server:
-#  port: 9014
-  port: 0
+  port: 9014
+#  port: 0
 spring:
   application:
     name: oldguy-log-server

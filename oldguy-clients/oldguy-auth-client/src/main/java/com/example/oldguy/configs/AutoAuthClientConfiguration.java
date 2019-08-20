@@ -21,7 +21,8 @@ import java.util.Properties;
 @ComponentScan("com.example.oldguy.services")
 public class AutoAuthClientConfiguration {
 
-    private String configPath = "classpath:auth-client.properties";
+//    private String configPath = "classpath:auth-client.properties";
+    private String configPath = "auth-client.properties";
 
     public static String JWT_INFO_FLAG = "oldguy.jwt-info-header";
 

@@ -1,5 +1,21 @@
 version: '3'
 services:
+  oldguy-auth-server:
+    image: oldguy-default-auth-server:latest
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /home/dc-ui/volume/data:/data
+    ports:
+      - "9011:9011"
+    environment:
+      - PROFILES=sit
+      - NACOS_ADDR=192.168.62.129:8848
+      - MYSQL_URL=192.168.1.112:3306
+      - REDIS_URL=192.168.1.112
+      - LOG_LEVEL=info
+    networks:
+      - server
   oldguy-gate:
     image: oldguy-gate:latest
     restart: always
@@ -12,5 +28,8 @@ services:
       - PROFILES=router,sit
       - NACOS_ADDR=192.168.62.129:8848
       - LOG_LEVEL=info
-
-
+    networks:
+      - server
+networks:
+  server:
+    external: true

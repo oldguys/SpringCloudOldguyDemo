@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @Description:
  * @CreateTIme: 2019/7/17 0017 上午 9:07
  **/
-@EnableMyBatisGenerator
+
 @EnableAuthClient
 @MapperScan(basePackages = "com.example.oldguy.modules.auth.dao.jpas")
 @EnableTransactionManagement

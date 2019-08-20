@@ -9,6 +9,10 @@ spring:
     nacos:
       discovery:
         server-addr: ${NACOS_ADDR}
+  redis:
+    host: ${REDIS_URL}
+    port: 6379
+
 
 logging:
   level:
