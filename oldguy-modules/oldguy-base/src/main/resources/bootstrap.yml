@@ -2,7 +2,9 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: localhost:8848
-        file-extension: yml
-  application:
-    name: oldguy-base
+        server-addr: localhost:8848 # 配置配置中心
+        file-extension: yml #默认为.properties 尾缀的文件,需要通过此处开启读取.yml 配置文件
+        active-profiles: a # 测试效果为无效，从源码中默认引用的依然是 配置文件（非bootstrap.yml）中的 spring.application.name
+        name: example # 此处可以修改默认读取的配置文件名，替换掉 spring.application.name (另外：bootstrap.yml配置的spring.application.name对于配置中心无效)
+        shared-dataids: oldguy-base-c.yml,oldguy-base-b.yml #配置非默认配置变量名的配置文件,此处默认是不开启动态更新的。
+        refreshable-dataids: oldguy-base-a.yml # 激活 在 shared-dataids 中配置的其他配置文件的 动态更新

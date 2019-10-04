@@ -16,7 +16,7 @@ public class WorkEntityInfo {
     /**
      * 任务信息
      */
-    private TaskEntityInfo taskEntityInfo;
+    private UserTaskInfo taskEntityInfo;
 
     /**
      * 任务批注

@@ -74,15 +74,8 @@ public class AddMultiInstanceExecutionCmd extends AbstractCountersignCmd impleme
 
         TaskEntityImpl task = (TaskEntityImpl) taskService.createTaskQuery().taskId(taskId).singleResult();
         ExecutionEntityImpl execution = (ExecutionEntityImpl) runtimeService.createExecutionQuery().executionId(task.getExecutionId()).singleResult();
-        BpmnModel bpmnModel = repositoryService.getBpmnModel(task.getProcessDefinitionId());
-        Process process = bpmnModel.getProcesses().get(0);
 
-        UserTask userTask = (UserTask) process.getFlowElement(task.getTaskDefinitionKey());
-
-        if (userTask.getLoopCharacteristics() == null) {
-            // TODO
-            Log4jUtils.getInstance(getClass()).error("task:[" + task.getId() + "] 不是会签节任务");
-        }
+        UserTask userTask = getUserTask(task);
 
         /**
          *  获取父级
@@ -191,4 +184,6 @@ public class AddMultiInstanceExecutionCmd extends AbstractCountersignCmd impleme
 
         return "加签成功";
     }
+
+
 }

@@ -1,5 +1,6 @@
 package com.example.oldguy;
 
+import com.example.oldguy.configs.EnableXhrReq;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,6 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
+@EnableXhrReq
 public class OldguyBaseApplication {
 
     public static void main(String[] args) {

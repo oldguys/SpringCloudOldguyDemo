@@ -8,9 +8,10 @@ import java.util.Set;
 /**
  * @author huangrenhao
  * @date 2018/12/3
+ * @Description 用户任务详情
  */
 @Data
-public class TaskEntityInfo implements Comparable<TaskEntityInfo> {
+public class UserTaskInfo implements Comparable<UserTaskInfo> {
 
     private String id;
 
@@ -45,7 +46,7 @@ public class TaskEntityInfo implements Comparable<TaskEntityInfo> {
     private long duration;
 
     @Override
-    public int compareTo(TaskEntityInfo o) {
+    public int compareTo(UserTaskInfo o) {
         return (int) (o.createTime.getTime() - this.createTime.getTime());
     }
 }

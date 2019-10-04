@@ -5,6 +5,7 @@ import lombok.Data;
 /**
  * @author huangrenhao
  * @date 2018/12/6
+ * @description 通用表单按钮
  */
 @Data
 public class WorkBtn {

@@ -54,15 +54,7 @@ public class DeleteMultiInstanceExecutionCmd extends AbstractCountersignCmd impl
 
         TaskEntityImpl task = (TaskEntityImpl) taskService.createTaskQuery().taskId(taskId).singleResult();
 
-        BpmnModel bpmnModel = repositoryService.getBpmnModel(task.getProcessDefinitionId());
-        Process process = bpmnModel.getProcesses().get(0);
-
-        UserTask userTask = (UserTask) process.getFlowElement(task.getTaskDefinitionKey());
-
-        if (userTask.getLoopCharacteristics() == null) {
-            // TODO
-            Log4jUtils.getInstance(getClass()).error("task:[" + task.getId() + "] 不是会签节任务");
-        }
+        UserTask userTask = getUserTask(task);
 
         ExecutionEntityImpl execution = (ExecutionEntityImpl) runtimeService.createExecutionQuery().executionId(task.getExecutionId()).singleResult();
         ExecutionEntityImpl parentNode = execution.getParent();

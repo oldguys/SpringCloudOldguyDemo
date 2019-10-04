@@ -8,9 +8,10 @@ import javax.validation.constraints.NotBlank;
 /**
  * @author huangrenhao
  * @date 2018/12/7
+ * @description 基础任务表单
  */
 @Data
-public class TaskForm {
+public class BaseTaskForm {
 
     /**
      * 任务ID
